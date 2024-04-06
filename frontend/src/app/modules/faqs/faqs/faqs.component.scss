@@ -1,0 +1,38 @@
+
+
+
+.all {
+  background-image: url('/assets/images/bgm.jpg');
+  background-size: cover;
+}
+
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+tr{
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+}

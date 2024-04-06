@@ -1,0 +1,68 @@
+
+
+  <!-- Hero Section -->
+<section class="hero mb-15">
+  <div class="hero-foreground"></div>
+  <div class="hero-middleground"></div>
+  <div class="hero-background"></div>
+  <div class="hero-content">
+    <h2>{{ introText }}</h2>
+  </div>
+</section>
+
+
+<div class="all">
+ <p class="gap-1">{{ introText }}</p>
+
+
+<h3 class="mb-15">Chatbot Features</h3>
+
+  <!-- Card Columns -->
+<div class="even-columns">
+      <div class="info-card">
+        <img class="image" src="assets/site_images/segment.webp" alt="Image 1">
+        <h3 class="gap-2">Question Segmentation</h3>
+        <p>The Bot can process multiple questions at once, it can provide an answer to questions. It can also recommend similar answers to other questions.</p>
+      </div>      
+      <div class="info-card">
+        <img class="image" src="assets/site_images/svmm.png" alt="Image 2">
+        <h3 class="gap-2">Vector Space Model</h3>
+        <p>A Vector Space Model is used by a computer to learn and remember words as numbers or vectors. The bot uses vectors to model words as numbers.</p>
+      </div>
+      
+      <div class="info-card">
+        <img class="image" src="assets/site_images/bubbles.png" alt="Image 3">
+        <h3 class="gap-2">Instant Answers to Questions</h3>
+        <p>The bot uses APIs to interact with the backend so as to answer questions very quickly. Tests have been run to ensure the APIs are safe, secure and most importantly performant.</p>
+      </div>
+</div>
+
+
+<div class="chat-box mb-15">
+  <app-chat (eventEmitter)="onChatSendMessage($event)"
+  class="chatcomponent"> </app-chat>
+</div>
+
+
+
+<div class="faq-card-container" *ngFor="let faq of faqsArray">
+  <div class="card-header" [style.background-color]="faqCardColor(faq.index)">
+     <span class="card-header-number">{{ faq.index }}</span>
+    <h3>{{ faq.question }}</h3>
+  </div>
+  <div class="card-body">
+    <p>{{ faq.answer }}</p>
+  </div>
+  <div class="card-footer" [style.background-color]="faqCardColor(faq.index)">
+    <span>{{ faq.category }}</span>
+  </div>
+</div>
+
+<hr>  <!-- break -->
+</div>
+
+
+
+
+
+

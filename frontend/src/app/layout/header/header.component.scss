@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+
+  border-bottom: 1px solid var(--border-color);
+
+  padding: 2rem;
+
+  box-sizing: border-box;
+  background-image: url('/assets/images/bgm.jpg');
+  background-size: cover;
+  
+}
+  a {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--text-color);
+
+    &.active {
+      font-weight: 900;
+    }
+  }
+  
+h2 {
+  font-size: 1em; /* Adjust the font size as needed */
+  font-weight: bold; /* Optionally, make the text bold */
+  color: var(--text-color);
+  margin-top: 10px;
+   }
+  
+.logo {
+  height: 2rem; /* Adjust as needed */
+  object-fit: contain;
+}
+
+.logo-container{
+  margin-right: auto; /* Aligns logo to the left within the header */
+}
+

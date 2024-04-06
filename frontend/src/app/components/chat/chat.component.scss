@@ -1,0 +1,79 @@
+
+
+p {
+  font-size: 1em; /* Adjust the font size as needed */
+  //font-weight: bold; /* Optionally, make the text bold */
+  color: var(--text-color);
+  text-align: left;
+ }
+
+
+.chat-container {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 1.5vw; /* Responsive border radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.chat-header {
+  padding: 2%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-top-left-radius: 1.5vw; /* Responsive border radius */
+  border-top-right-radius: 1.5vw; /* Responsive border radius */
+  
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+}
+
+
+.chat-messages {
+  padding: 2%;
+}
+
+.message {
+  margin: 1%;
+  padding: 1.5%;
+  border-radius: 1.5vw; /* Responsive border radius */
+}
+
+.received {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.sent {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.chat-input {
+  padding: 2%;
+  border-top: 1px solid var(--border-color);
+}
+
+.chat-input input[type="text"] {
+  width: calc(80% - 2vw); /* Responsive width */
+  padding: 1vw;
+  border: 1px solid var(--highlight-color);
+  border-radius: 1vw; /* Responsive border radius */
+  margin-right: 2%;
+}
+
+.chat-input button {
+  width: 15%;
+  padding: 1%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 1vw; /* Responsive border radius */
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: var(--bg-color);
+}

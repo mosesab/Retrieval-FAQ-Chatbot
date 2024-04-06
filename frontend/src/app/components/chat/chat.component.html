@@ -1,0 +1,25 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <span class="close-btn" (click)="toggleChat()">×</span>
+    FUOYE ChatBot
+  </div>
+  <div class="chatbody" *ngIf="showChat">
+    <div class="chat-messages">
+      <div class="message received">
+      Hello! How can I assist you today?
+      </div>
+      <div class="message received">
+      Looking for an answer? Ask me about it
+      </div>
+      <div class="message" *ngFor="let message of messages" 
+      [ngClass]="{'received': message.type === 'received', 'sent': message.type === 'sent'}"
+      >
+        {{ message.text }}
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a question about FUOYE..." [(ngModel)]="userInput" (keydown.enter)="sendMessage()">
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>

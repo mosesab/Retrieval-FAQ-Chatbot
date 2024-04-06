@@ -1,0 +1,150 @@
+// primeng styles, necessary files for primeng components.
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+// All of your variables should be defined here
+:root {
+  --bg-color: rgb(242, 242, 242); /* off-white */
+  --text-color: rgb(51, 51, 51); /* dark gray */
+  --opp-text-color: rgb(242, 242, 242); /* off-white */
+  
+  --header-color: rgb(242, 242, 242); /* off-white */
+  --border-color: rgb(200, 200, 200); /* slightly darker off-white */
+
+  --primary-color: #A0E7E5;
+  --secondary-color: #FBE7C6;
+  --highlight-color: #FFAEBC;
+  --accent-color: : #B4F8C8; 
+}
+
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+app-root {
+  height: 100%;
+}
+
+
+app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Basics SECTION */
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+h2 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-05 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.full-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+
+
+.heading {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.passage {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+

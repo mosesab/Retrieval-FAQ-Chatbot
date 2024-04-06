@@ -1,0 +1,175 @@
+
+/*
+{
+      outline: 3px solid yellow;
+      
+}
+*/
+
+
+.all{
+  background-image: url('../../assets/images/bgm.jpg');
+  background-size: cover;
+}
+
+
+.image {
+  width: 100%;
+  height: auto; 
+  margin-bottom: 0.3rem;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+}
+
+
+
+/* PARALLAX SCROLLLING - Hero SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+.hero-middleground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Double the width for a landscape aspect ratio */
+  height: 100%;
+  background-image: url('../../assets/images/text.png');
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+  z-index: -2;
+  opacity: 0.4;
+}
+.hero-foreground {
+  position: relative;
+  width: 60%; /* Double the width for a landscape aspect ratio */
+  height: 70%;
+  background-image: url('../../assets/images/robot.png');
+  background-size: contain;
+  background-position: center;
+  transform: translateZ(0);
+  z-index: -3,;
+  opacity: 0.9;
+  margin: 0 auto; /* top and bottom margins to 0, the left and right margins to auto */
+  //outline: solid 3px red;
+}
+.hero-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/images/bg.webp');
+  background-size: cover;
+  
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  transform: translateZ(0);
+  z-index: -4;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: var(--opp-text-color);
+  z-index: -1;
+}
+
+
+
+/* Info Columns Section */
+.even-columns {
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; /* top and bottom margins to 0, the left and right margins to auto */
+  
+}
+.even-columns > * {
+ flex: 1; /* Distributes available space evenly among items */
+}
+.info-card{
+  margin-bottom: 2rem;
+}
+
+
+
+
+/* Top FAQS Section */
+/*
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.faq-card {
+    width: calc(25% - );
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+*/
+
+
+.faq-card-container {
+  width: 80%;
+  //background-color: --bg-color;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  //opacity: 0.4;
+}
+
+.card-header {
+  //background-color: #007bff;
+  color: var(--text-color);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-header-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  color: var(--text-color);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-footer {
+  //background-color: #007bff;
+  color: var(--text-color);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+
+
+
+
+ 
